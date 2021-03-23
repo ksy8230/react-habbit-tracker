@@ -7,3 +7,10 @@
 
 /src   : 동적으로 만들어주는 파일들   
 
+### react 17 버전
+- react/jsx-runtime 타입이 빠져있다. [관련 링크](https://github.com/facebook/create-react-app/issues/10109)   
+```js
+import reportWebVitals from './reportWebVitals';
+
+```
+index 파일에 꼭 포함되어야 한다.
