@@ -27,3 +27,7 @@ index 파일에 꼭 포함되어야 한다.
 
 
 > 오브젝트는 값(Value) 자체가 변수에 저장되는 것이 아니라, 참조값(Reference)이 저장된다
+
+
+### netlify 배포 시
+package.json에 작성한 homepage: 링크 삭제하기
