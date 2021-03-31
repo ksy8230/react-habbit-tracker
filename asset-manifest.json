@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/react-habbit-tracker/static/css/main.a6abb5db.chunk.css",
-    "main.js": "/react-habbit-tracker/static/js/main.76f907e2.chunk.js",
-    "main.js.map": "/react-habbit-tracker/static/js/main.76f907e2.chunk.js.map",
-    "runtime-main.js": "/react-habbit-tracker/static/js/runtime-main.63c83919.js",
-    "runtime-main.js.map": "/react-habbit-tracker/static/js/runtime-main.63c83919.js.map",
-    "static/js/2.2b8b8fec.chunk.js": "/react-habbit-tracker/static/js/2.2b8b8fec.chunk.js",
-    "static/js/2.2b8b8fec.chunk.js.map": "/react-habbit-tracker/static/js/2.2b8b8fec.chunk.js.map",
-    "static/js/3.b1d47882.chunk.js": "/react-habbit-tracker/static/js/3.b1d47882.chunk.js",
-    "static/js/3.b1d47882.chunk.js.map": "/react-habbit-tracker/static/js/3.b1d47882.chunk.js.map",
+    "main.css": "/react-habbit-tracker/static/css/main.00ad6349.chunk.css",
+    "main.js": "/react-habbit-tracker/static/js/main.08102bb9.chunk.js",
+    "main.js.map": "/react-habbit-tracker/static/js/main.08102bb9.chunk.js.map",
+    "runtime-main.js": "/react-habbit-tracker/static/js/runtime-main.937dbd21.js",
+    "runtime-main.js.map": "/react-habbit-tracker/static/js/runtime-main.937dbd21.js.map",
+    "static/js/2.b87f937d.chunk.js": "/react-habbit-tracker/static/js/2.b87f937d.chunk.js",
+    "static/js/2.b87f937d.chunk.js.map": "/react-habbit-tracker/static/js/2.b87f937d.chunk.js.map",
+    "static/js/3.cb616aae.chunk.js": "/react-habbit-tracker/static/js/3.cb616aae.chunk.js",
+    "static/js/3.cb616aae.chunk.js.map": "/react-habbit-tracker/static/js/3.cb616aae.chunk.js.map",
     "index.html": "/react-habbit-tracker/index.html",
-    "static/css/main.a6abb5db.chunk.css.map": "/react-habbit-tracker/static/css/main.a6abb5db.chunk.css.map",
-    "static/js/2.2b8b8fec.chunk.js.LICENSE.txt": "/react-habbit-tracker/static/js/2.2b8b8fec.chunk.js.LICENSE.txt"
+    "static/css/main.00ad6349.chunk.css.map": "/react-habbit-tracker/static/css/main.00ad6349.chunk.css.map",
+    "static/js/2.b87f937d.chunk.js.LICENSE.txt": "/react-habbit-tracker/static/js/2.b87f937d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.63c83919.js",
-    "static/js/2.2b8b8fec.chunk.js",
-    "static/css/main.a6abb5db.chunk.css",
-    "static/js/main.76f907e2.chunk.js"
+    "static/js/runtime-main.937dbd21.js",
+    "static/js/2.b87f937d.chunk.js",
+    "static/css/main.00ad6349.chunk.css",
+    "static/js/main.08102bb9.chunk.js"
   ]
 }
