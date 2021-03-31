@@ -1,8 +1,9 @@
 import React from 'react';
 import VideoItem from '../video_item';
+import styles from './video_list.module.css'
 
 export type VideoSnippetType = {
-    [k: string]: string | any[] | object; // ?
+    [k: string]: any;
 }
 
 export type VideoItemType = {
@@ -16,7 +17,7 @@ type PropTypes = {
 }
 const VideoList = (props:PropTypes) => {
     return (
-        <ul>
+        <ul className={styles.videos}>
             {props.videos.map(v => <VideoItem item={v.snippet} key={v.id} />) }
         </ul>
     );
