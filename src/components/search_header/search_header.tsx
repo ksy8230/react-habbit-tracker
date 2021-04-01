@@ -1,4 +1,4 @@
-import React, { SyntheticEvent, useRef } from 'react';
+import React, {  useRef } from 'react';
 import styles from './search_header.module.css';
 
 type PropTypes = {
@@ -13,7 +13,7 @@ const Searchheader = ({ handleSearch }: PropTypes) => {
         handleSearch(value)
     }
 
-    const onClick = (e:SyntheticEvent) => {
+    const onClick = () => {
         onSearch();
     }
 

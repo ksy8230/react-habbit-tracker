@@ -18,7 +18,7 @@ type PropTypes = {
 const VideoList = (props:PropTypes) => {
     return (
         <ul className={styles.videos}>
-            {props.videos.map(v => <VideoItem item={v.snippet} key={v.id} />) }
+            {props.videos?.map(v => <VideoItem item={v.snippet} key={v.id} />) }
         </ul>
     );
 };
