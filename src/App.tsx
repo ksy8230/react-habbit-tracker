@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import './App.css';
 import '@fortawesome/fontawesome-free/js/all.js';
 import VideoList, { VideoItemType } from './components/video_list';
@@ -19,13 +19,16 @@ function App({youtube}: PropsTypes) {
     setSelectedVideo(video);
   }
 
-  const handleSearch = (query:string) => {
-    youtube.search(query).then((result:any) => setVideos(result));
-  };
+  const handleSearch = useCallback((query:string) => {
+    youtube.search(query).then((result:any) => {
+      setVideos(result);
+      setSelectedVideo(null);
+    });
+  }, [youtube]);
 
   useEffect(() => {
-      youtube.mostPopular().then((result:any) => setVideos(result.items))
-  }, []);
+      youtube.mostPopular().then((result:any) => setVideos(result))
+  }, [youtube]); // missing dependency?! -> 컴포넌트가 마운트 되었을 때만 사용
 
   return (
     <div className={styles.app}>

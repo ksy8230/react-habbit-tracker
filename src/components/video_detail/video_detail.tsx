@@ -9,6 +9,7 @@ const VideoDetail = ({video}:PropTypes) => {
         <div>
             <h1>{video.title}</h1>
             <iframe 
+                title={video.title}
                 width="720" 
                 height="405"
                 src={`https://www.youtube.com/embed/${video.id}`}

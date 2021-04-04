@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { VideoSnippetType } from '../video_list';
 import styles from './video_item.module.css'
 
@@ -6,7 +6,7 @@ type VideoItemPropType = {
     handleVideoClick: (video:any) => void
 }
 
-const VideoItem = (props: VideoItemPropType & VideoSnippetType) => {
+const VideoItem = memo((props: VideoItemPropType & VideoSnippetType) => {
     return (
         <li className={styles.container} onClick={() => props.handleVideoClick(props.video)}>
             <div className={styles.video}>
@@ -17,6 +17,6 @@ const VideoItem = (props: VideoItemPropType & VideoSnippetType) => {
             </div>
         </li>
     );
-};
+});
 
 export default VideoItem;
