@@ -1,4 +1,4 @@
-import { VideoSnippetType } from './../components/video_list/index';
+import { VideoSnippetType } from '../components/video_list/index';
 
 export class Youtube {
     private key = '';
