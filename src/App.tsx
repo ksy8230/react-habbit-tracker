@@ -1,16 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import '@fortawesome/fontawesome-free/js/all.js';
-import VideoList from './components/video_list';
+import VideoList, { VideoItemType } from './components/video_list';
 import Searchheader from './components/search_header/search_header';
 import {VideoSnippetType} from './components/video_list'
+import VideoDetail from './components/video_detail/video_detail';
+import styles from './app.module.css';
 
 type PropsTypes = {
   youtube:any
 }
 
 function App({youtube}: PropsTypes) {
-  const [videos, setVideos] = useState<any[]>([]);
+  const [videos, setVideos] = useState<VideoItemType[]>([]);
+  const [selectedVideo, setSelectedVideo] = useState<VideoSnippetType | null>(null);
+
+  const selectVideo = (video:VideoItemType) => {
+    setSelectedVideo(video);
+  }
 
   const handleSearch = (query:string) => {
     youtube.search(query).then((result:any) => setVideos(result));
@@ -21,11 +28,19 @@ function App({youtube}: PropsTypes) {
   }, []);
 
   return (
-    <div className="app">
+    <div className={styles.app}>
       <Searchheader handleSearch={handleSearch} />
-      <div className="content">
-        <VideoList videos={videos} />
-      </div>
+      <section className={styles.content}>
+        
+          {
+            selectedVideo && <div className={styles.detail}><VideoDetail video={selectedVideo} /></div>
+          }
+        
+        <div className={styles.list}>
+          <VideoList videos={videos} handleVideoClick={selectVideo} />
+        </div>
+
+      </section>
     </div>
   );
 }

@@ -14,11 +14,12 @@ export type VideoItemType = {
 }
 type PropTypes = {
     videos: VideoItemType[]
+    handleVideoClick: (video:any) => void
 }
 const VideoList = (props:PropTypes) => {
     return (
         <ul className={styles.videos}>
-            {props.videos?.map(v => <VideoItem item={v.snippet} key={v.id} />) }
+            {props.videos?.map(v => <VideoItem video={v} key={v.id} handleVideoClick={props.handleVideoClick} />) }
         </ul>
     );
 };
